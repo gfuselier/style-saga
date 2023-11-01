@@ -1,20 +1,20 @@
 [
   {
-    "first_name": "Sal",
+    "first_name": "Carmen",
     "last_name": "Regina",
-    "email": "sal@yahoo.com",
+    "email": "carmen@yahoo.com",
     "password": "password12345"
   }, 
   {
-    "first_name": "Sal",
-    "last_name": "Regina",
-    "email": "sal@gmail.com",
+    "first_name": "Giselle",
+    "last_name": "Fuselier",
+    "email": "giselle@gmail.com",
     "password": "password12345"
   }, 
   {
-    "first_name": "Sal",
-    "last_name": "Regina",
-    "email": "sal@hotmail.com",
+    "first_name": "Kevin",
+    "last_name": "Serrano",
+    "email": "kevin@hotmail.com",
     "password": "password12345"
   }
 ]
