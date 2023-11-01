@@ -9,12 +9,24 @@
     "title": "Sambas",
     "description": "What are y'alls thoughts on the adidas samba trend?",
     "picture": "https://hips.hearstapps.com/hmg-prod/images/anna-winter-seen-wearing-saint-laurent-black-sunglasses-news-photo-1689079130.jpg?crop=0.65625xw:1xh;center,top&resize=640:*",
-    "user_id": 2
+    "user_id": 1
   },
   {
     "title": "Pick Your Fav",
     "description": "Comment your favorite look below: 1, 2, 3, or 4?",
     "picture": "https://www.harrods.com/BWStaticContent/50000/05f59ab5-b98f-40ea-afb9-d1137866be41_d-hero-mw-fashion-week-trends-july22.jpg",
-    "user_id": 3
+    "user_id": 1
+  },
+  {
+    "title": "Jacob Elordi's Street Style",
+    "description": "One of my favorite looks on him (he always has a murse lol)",
+    "picture": "https://manofmany.com/wp-content/uploads/2022/02/Always-Accessorise.jpg",
+    "user_id": 1
+  },
+  {
+    "title": "Sneaker Heads Unite",
+    "description": "I need them all",
+    "picture": "https://www.highsnobiety.com/static-assets/dato/1681910421-best-sneaker-stores-new-york-2.jpg",
+    "user_id": 1
   }
 ]

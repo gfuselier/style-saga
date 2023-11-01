@@ -6,12 +6,22 @@
     },
     {
         "text": "I love them! Need every color.",
-        "user_id": 2,
+        "user_id": 1,
         "post_id": 2
     },
     {
         "text": "2 has great style!",
-        "user_id": 3,
+        "user_id": 1,
         "post_id": 3
+    },
+    {
+        "text": "Not sure I could pull off the half-on jacket",
+        "user_id": 1,
+        "post_id": 4
+    },
+    {
+        "text": "Don't let me catch you wearing the panda dunks or some beat up AF1s!",
+        "user_id": 1,
+        "post_id": 5
     }
 ]

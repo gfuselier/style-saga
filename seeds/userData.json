@@ -16,5 +16,11 @@
     "last_name": "Serrano",
     "email": "kevin@hotmail.com",
     "password": "password12345"
+  }, 
+  {
+    "first_name": "Justin",
+    "last_name": "Bieber",
+    "email": "itsjb@hotmail.com",
+    "password": "password12345"
   }
 ]
