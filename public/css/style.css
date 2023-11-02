@@ -1,0 +1,8 @@
+nav {
+    font-family: 'Bungee', sans-serif;
+color: rgb(227, 27, 27) !important;
+}
+
+nav a, footer {
+    color: rgb(227, 27, 27) !important;
+}
