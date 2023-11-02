@@ -26,11 +26,11 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item is-hoverable">
+        <a class="navbar-item is-hoverable" href="/dashboard">
           Dashboard
         </a>
 
-        <a class="navbar-item is-hoverable">
+        <a class="navbar-item is-hoverable" href="/profile">
           Profile
         </a>
       </div>
@@ -52,14 +52,17 @@
     </div>
     </div>
   </nav>
-  </header>
+  <br>
+  <br>
+  <br>
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
+  <br>
+  <br>
   <footer class="footer is-fixed-bottom has-background-black has-text-centered">
     <p>© 2023 Style Saga Inc. | Contact Us: stylesaga@gmail.com</p>
   </footer>
-  </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
