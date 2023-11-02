@@ -5,33 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Style Saga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">Style Saga</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top has-background-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-1" href="/">Style Saga</a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-hoverable">
+          Dashboard
+        </a>
+
+        <a class="navbar-item is-hoverable">
+          Profile
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+        </div>
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a class="button is-danger is-light" href="/login">
+          <strong>Login</strong>
+        </a>
         {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer class="footer">
-      <p>© 2023 Style Saga Inc. | Contact Us: stylesaga@gmail.com</p>
-    </footer>
+      </div>
+    </div>
+    </div>
+  </nav>
+  </header>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  <footer class="footer has-background-black has-text-centered">
+    <p>© 2023 Style Saga Inc. | Contact Us: stylesaga@gmail.com</p>
+  </footer>
   </div>
 
   <!-- Render script for logged in users only -->
