@@ -1,21 +1,39 @@
-<div class="text-center">
-  <p>{{post.description}}</p>
+{{log this}}
+{{!-- {{#each posts as |post| }} --}}
+<br>
+<br>
+<br>
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <p>
+      {{title}}
+    </p>
+    <img src="{{picture}}" alt="{{description}}">
+    <p>
+      {{description}}
+    </p>
+    <a href="/post/{{id}}">View Post</a>
 </div>
+{{!-- {{/each}} --}}
 <article class="media">
   <figure class="media-left">
+    <br>
     <p class="image is-64x64">
+      <br>
       <img src="https://bulma.io/images/placeholders/128x128.png">
     </p>
   </figure>
   <div class="media-content">
     <div class="content">
+      <br>
       <p>
-        <strong>{{user.first_name}}{{user.last_name}}</strong> <small>{{user.email}}</small> <small>31m</small>
         <br>
-        {{#each comments as |comment|}}
-        {{!-- {{log this}} --}}
-        {{comment.text}}
-        {{/each}}
+        <strong>{{user.first_name}}{{user.last_name}}</strong> <small>{{user.email}}</small> <small>2 hrs</small>
+        <br>
+        {{#each comments as |comment|}}<br>
+        {{comment.text}}<br>
+        {{/each}}<br>
+        <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
       </p>
     </div>
     <nav class="level is-mobile">
