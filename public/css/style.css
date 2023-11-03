@@ -38,5 +38,18 @@ position: relative;
 
 #heroButton {
     font-family: 'Bungee', sans-serif;
-    color: aliceblue;
+    color: rgb(227, 27, 27);
+}
+
+.is-fullheight-100vh {
+    height:100vh
+}
+
+#post-image {
+    width: 50%;
+    height: 50%;
+}
+
+#dash-title {
+    font-family: 'Bungee', sans-serif;
 }
