@@ -1,10 +1,7 @@
 <div class="columns">
   <div class="column">
-    <h2 class="title is-2">My Style</h2>
-  </div>
-  <div class="column">
     {{log this}}
-    <h3 class="title is-3">Hi, {{user.first_name}}{{user.last_name}}!</h3>
+    <h2 class="title is-2">Hi, {{user.first_name}}{{user.last_name}}!</h2>
   </div>
 </div>
 
@@ -14,19 +11,19 @@
 
     <form class="box" id="create-post-form">
       <div class="field">
-        <label class="label">Title:</label>
+        <label class="label">Title</label>
         <div class="control">
           <input class="input" type="text" id="post-title"/>
         </div>
       </div>
       <div class="field">
-        <label class="label">Description:</label>
+        <label class="label">Description</label>
         <div class="control">
           <input class="input" type="text" id="post-description"/>
         </div>
       </div>
       <div class="field has-addons">
-        <label class="label">Picture:</label>
+        <label class="label">Picture</label>
         <div class="control">
           <input class="input" type="text" placeholder="image url">
         </div>
@@ -45,7 +42,7 @@
     </div>
 
     <div class="column">
-      <h3>My Posts:</h3>
+      <h3 class="title is-3">My Posts:</h3>
     
       {{#if posts.length}}
       {{#each posts as |post|}}
