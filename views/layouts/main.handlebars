@@ -26,13 +26,14 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
+          {{#if logged_in}}
         <a class="navbar-item is-hoverable" href="/dashboard">
           Dashboard
         </a>
-
         <a class="navbar-item is-hoverable" href="/profile">
           Profile
         </a>
+         {{/if}}
       </div>
     </div>
 
@@ -41,9 +42,9 @@
         <div class="buttons">
         </div>
         {{#if logged_in}}
-       <a class="button" href="/">
+       <button class="button" id="logout">
           <strong>Logout</strong>
-        </a>
+        </button>
         {{else}}
         <a class="button" href="/login">
           <strong>Login</strong>
