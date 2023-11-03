@@ -40,3 +40,7 @@ position: relative;
     font-family: 'Bungee', sans-serif;
     color: rgb(227, 27, 27);
 }
+
+.is-fullheight-100vh {
+    height:100vh
+}
