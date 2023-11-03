@@ -50,6 +50,7 @@ position: relative;
     height: 50%;
 }
 
-#dash-title {
+#dash-title,
+#profile-greeting {
     font-family: 'Bungee', sans-serif;
 }
