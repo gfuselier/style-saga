@@ -1,12 +1,8 @@
 <br>
 <br>
-{{!-- <div class="columns m-5">
-  <div class="column"> --}}
-    <h2 class="title is-size-2 has-text-centered" id="profile-greeting">Hi, {{first_name}}!</h2>
-  {{!-- </div>
-</div> --}}
+<h2 class="title is-size-2 has-text-centered" id="profile-greeting">Hi, {{first_name}}!</h2>
 
-<div class="columns is-variable is-6 is-fullheight-100vh m-5">
+<div class="columns is-variable is-6 m-5">
   <div class="column">
     <h3 class="title is-3 has-text-centered">Create a New Post</h3>
 
@@ -47,24 +43,39 @@
     
       {{#if posts.length}}
       {{#each posts as |post|}}
-      <div class="col-md-5">
-        <p>
-          {{post.title}}
-        </p>
-        <img src="{{post.picture}}" alt="{{post.description}}">
-        <p>
-          {{post.description}}
-        </p>
-        <a href="/post/{{post.id}}">View Post</a>
+      <div class="container card has-text-centered mb-2">
+        <br>
+        <div class="card-image">
+        </div>
+        <div class="card-content has-text-centered">
+          <div class="media-center">
+            <div class="media-center">
+              <figure class="container image is-inline-block" id="post-image">
+                <img src="{{post.picture}}" alt="{{post.title}}">
+              </figure>
+            </div>
+      
+          </div>
+          <br>
+          <div class="media-content">
+            <p class="title is-4">{{post.title}}</p>
+          </div>
+          <div class="content is-size-5">
+            {{post.description}}
+            <br>
+            <br>
+            <a class="button is-danger is-light" href="/post/{{post.id}}">View Post/Add Comment</a>
+            <br>
+          </div>
+        </div>
       </div>
       {{/each}}
       {{/if}}
     </div>
+  </div> 
 </div>
-
- 
-  
-</div>
+<br>
+<br>
 
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 <script src="./js/profile.js"></script>
