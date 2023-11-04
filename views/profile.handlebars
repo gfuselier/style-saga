@@ -38,16 +38,16 @@
     </form>
     </div>
 
-    <div class="column">
+    <div class="column post-list">
       <h3 class="title is-3 has-text-centered">My Posts</h3>
     
       {{#if posts.length}}
       {{#each posts as |post|}}
-      <div class="container card has-text-centered mb-2">
-        <br>
-        <div class="card-image">
-        </div>
+      <div class="container card mb-2">
         <div class="card-content has-text-centered">
+          <div class="buttons is-right">
+            <button class="delete" data-id="{{post.id}}"></button>
+          </div>
           <div class="media-center">
             <div class="media-center">
               <figure class="container image is-inline-block" id="post-image">
