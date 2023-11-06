@@ -8,7 +8,10 @@ SO THAT I can be informed about the ever-evolving world of fashion
 
 ## Description
 
-This is a blog-style website where users can view street style fashion posts, comment their thoughts about the specific look/style, and add their favorite looks to a wishlist/favorites list to refer back to for future inspiration.
+Style Saga is a fashion blog for primarily street style fashion that allows users to stay informed on the ever-evolving world of fashion. Upon signing up/logging in, users can view a dashboard with several posts regarding certain looks, style aspects, etc. and can click to view the post in more detail and add a comment (this is where they will see other’s comments). The user’s profile page allows them to make a new post, as well as see the posts they have created. 
+
+Don’t fall behind on the latest trends. Join Style Saga today. 
+
 
 ## Installation
 
@@ -18,10 +21,10 @@ N/A
 
 
 
-[Link to Deployed Site]()
+[Link to Deployed Site](https://arcane-bastion-46349-44530c72db10.herokuapp.com/)
 
 
-![screenshot]()
+![screenshot](./public/images/screenshot.png)
 
 
 ## Credits
