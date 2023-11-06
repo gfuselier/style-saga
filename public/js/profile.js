@@ -26,7 +26,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/posts/${id}`, {
+      const response = await fetch(`/api/posts/post/${id}`, {
         method: 'DELETE',
       });
   
@@ -42,9 +42,9 @@ const newFormHandler = async (event) => {
     .querySelector('#create-post-form')
     .addEventListener('submit', newFormHandler);
   
-//   document
-//     .querySelector('.post-list')
-//     .addEventListener('click', delButtonHandler);
+  document
+    .querySelector('.post-list')
+    .addEventListener('click', delButtonHandler);
   
 var myWidget = cloudinary.createUploadWidget({
   cloudName: 'dsyymbmvk', 
