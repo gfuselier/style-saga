@@ -27,8 +27,10 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create post');
+        alert('Failed to create post.');
       }
+    } else {
+      alert('Please make sure all fields are completed before submitting.')
     }
   };
   
@@ -43,7 +45,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete post');
+        alert('Failed to delete post. Please try again.');
       }
     }
   };

@@ -16,8 +16,10 @@ const newCommentFormHandler = async (event) => {
         if (response.ok) {
           document.location.replace(`/post/${id}`);
         } else {
-          alert('Make sure to write a comment before submitting.');
+          alert('Failed to create comment.');
         }
+      } else {
+        alert('Please write a comment before submitting.')
       }
 }
 
