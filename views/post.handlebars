@@ -28,7 +28,7 @@
 
 {{#if comments.length}}
 {{#each comments as |comment|}}
-<article class="media m-5">
+<div class="media m-5">
   <figure class="media-left">
     <br>
     <p class="image is-64x64">
@@ -62,33 +62,27 @@
       </div>
     </nav> --}}
   </div>
-</article>
+</div>
 {{/each}}
 
-<article class="media m-5">
+<div class="media m-5">
   <figure class="media-left">
-    <p class="image is-64x64">
-      <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
-    </p>
+    {{!-- <p class="image is-64x64"> --}}
+      <img class="image is-64x64" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
+    {{!-- </p> --}}
   </figure>
-  <div class="media-content">
+  <form id="new-comment-form">
     <div class="field">
-      <p class="control">
-        <textarea class="textarea" placeholder="Add a comment..."></textarea>
-      </p>
+      <div class="control">
+        <textarea class="textarea" id="comment-text" placeholder="Add a comment..."></textarea>
+      </div>
     </div>
-    <nav class="level">
-      <div class="level-left">
-        <div class="level-item">
-          <a class="button is-info">Submit</a>
-        </div>
+    <div class="field">
+      <div class="control">
+        <button class="button is-dark" type="submit">Submit</button>
       </div>
-      <div class="level-right">
-        <div class="level-item">
-        </div>
-      </div>
-    </nav>
-  </div>
-</article>
+    </div>
+  </form>
+</div>
 
 <script src="./js/post.js"></script>
