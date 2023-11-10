@@ -30,6 +30,9 @@
   {{#if comments.length}}
   {{#each comments as |comment|}}
   <div class="media m-5">
+    <div class="buttons is-right">
+      <button class="delete" data-id="{{comment.id}}"></button>
+    </div>
     <figure class="media-left">
       <br>
       <p class="image is-64x64">
