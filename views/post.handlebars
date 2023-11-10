@@ -1,5 +1,5 @@
 {{log this}}
-{{!-- {{#each posts as |post| }} --}}
+
 <br>
 <br>
 <br>
@@ -25,7 +25,9 @@
     </div>
   </div>
 </div>
-{{!-- {{/each}} --}}
+
+{{#if comments.length}}
+{{#each comments as |comment|}}
 <article class="media m-5">
   <figure class="media-left">
     <br>
@@ -36,18 +38,17 @@
   </figure>
   <div class="media-content">
     <div class="content">
-      <br>
+      {{!-- <br> --}}
       <p>
         <br>
-        <strong>{{user.first_name}}{{user.last_name}}</strong> <small>{{user.email}}</small> <small>2 hrs</small>
+        <strong>{{user.first_name}} {{user.last_name}}</strong> 
         <br>
-        {{#each comments as |comment|}}<br>
-        {{comment.text}}<br>
-        {{/each}}<br>
-        <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+        {{comment.text}}
+        <br>
+        <small><a>Like</a> · <a>Reply</a></small>
       </p>
     </div>
-    <nav class="level is-mobile">
+    {{!-- <nav class="level is-mobile">
       <div class="level-left">
         <a class="level-item">
           <span class="icon is-small"><i class="fas fa-reply"></i></span>
@@ -59,9 +60,10 @@
           <span class="icon is-small"><i class="fas fa-heart"></i></span>
         </a>
       </div>
-    </nav>
+    </nav> --}}
   </div>
 </article>
+{{/each}}
 
 <article class="media m-5">
   <figure class="media-left">
