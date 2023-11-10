@@ -26,44 +26,47 @@
   </div>
 </div>
 
-{{#if comments.length}}
-{{#each comments as |comment|}}
-<div class="media m-5">
-  <figure class="media-left">
-    <br>
-    <p class="image is-64x64">
+<div class="comment-list">
+  {{#if comments.length}}
+  {{#each comments as |comment|}}
+  <div class="media m-5">
+    <figure class="media-left">
       <br>
-      <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
-    </p>
-  </figure>
-  <div class="media-content">
-    <div class="content">
-      {{!-- <br> --}}
-      <p>
+      <p class="image is-64x64">
         <br>
-        <strong>{{user.first_name}} {{user.last_name}}</strong> 
-        <br>
-        {{comment.text}}
-        <br>
-        <small><a>Like</a> · <a>Reply</a></small>
+        <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
       </p>
-    </div>
-    {{!-- <nav class="level is-mobile">
-      <div class="level-left">
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-reply"></i></span>
-        </a>
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-        </a>
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-heart"></i></span>
-        </a>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        {{!-- <br> --}}
+        <p>
+          <br>
+          <strong>{{user.first_name}} {{user.last_name}}</strong> 
+          <br>
+          {{comment.text}}
+          <br>
+          <small><a>Like</a> · <a>Reply</a></small>
+        </p>
       </div>
-    </nav> --}}
+      {{!-- <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-reply"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+          </a>
+        </div>
+      </nav> --}}
+    </div>
   </div>
+  {{/each}}
 </div>
-{{/each}}
+
 
 <div class="media m-5">
   <figure class="media-left">
