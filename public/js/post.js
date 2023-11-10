@@ -2,6 +2,7 @@ const newCommentFormHandler = async (event) => {
     event.preventDefault();
 
     const text = document.querySelector('#comment-text').value.trim();
+    const id = event.target.getAttribute('data-id');
 
     if (text) {
         const response = await fetch(`/api/comments`, {
@@ -13,34 +14,34 @@ const newCommentFormHandler = async (event) => {
         });
     
         if (response.ok) {
-          document.location.replace('/post/:id');
+          document.location.replace(`/post/${id}`);
         } else {
           alert('Make sure to write a comment before submitting.');
         }
       }
 }
 
-const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
+// const delButtonHandler = async (event) => {
+//     if (event.target.hasAttribute('data-id')) {
+//       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/comments/${id}`, {
-        method: 'DELETE',
-      });
+//       const response = await fetch(`/api/comments/${id}`, {
+//         method: 'DELETE',
+//       });
   
-      if (response.ok) {
-        document.location.replace('/post/:id');
-      } else {
-        alert('Failed to delete comment. Please try again.');
-      }
-    }
-  };
+//       if (response.ok) {
+//         document.location.replace('/post/:id');
+//       } else {
+//         alert('Failed to delete comment. Please try again.');
+//       }
+//     }
+//   };
 
   document
     .querySelector('#new-comment-form')
     .addEventListener('submit', newCommentFormHandler);
 
-    document
-    .querySelector('.comment-list')
-    .addEventListener('click', delButtonHandler);   
+    // document
+    // .querySelector('.comment-list')
+    // .addEventListener('click', delButtonHandler);   
   

@@ -40,7 +40,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 });
 
 router.get('/post/:id',
-  // withAuth,
+  withAuth,
   async (req, res) => {
     try {
       const postData = await Post.findByPk(req.params.id, {

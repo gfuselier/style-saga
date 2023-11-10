@@ -1,4 +1,4 @@
-{{log this}}
+{{!-- {{log this}} --}}
 
 <br>
 <br>
@@ -30,9 +30,9 @@
   {{#if comments.length}}
   {{#each comments as |comment|}}
   <div class="media m-5">
-    <div class="buttons is-right">
+    {{!-- <div class="buttons is-right">
       <button class="delete" data-id="{{comment.id}}"></button>
-    </div>
+    </div> --}}
     <figure class="media-left">
       <br>
       <p class="image is-64x64">
@@ -68,6 +68,7 @@
     </div>
   </div>
   {{/each}}
+  {{/if}}
 </div>
 
 
@@ -85,7 +86,7 @@
     </div>
     <div class="field">
       <div class="control">
-        <button class="button is-dark" type="submit">Submit</button>
+        <button class="button is-dark" data-id="{{id}}" type="submit">Submit</button>
       </div>
     </div>
   </form>
