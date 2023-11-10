@@ -1,3 +1,13 @@
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'dsyymbmvk', 
+  uploadPreset: 'style-saga'}, (error, result) => { 
+    if (!error && result && result.event === "success") { 
+      console.log('Done! Here is the image info: ', result.info); 
+      document.querySelector('#post-picture').value = result.info.secure_url;
+    }
+  }
+)
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   
@@ -46,16 +56,8 @@ const newFormHandler = async (event) => {
     .querySelector('.post-list')
     .addEventListener('click', delButtonHandler);
   
-var myWidget = cloudinary.createUploadWidget({
-  cloudName: 'dsyymbmvk', 
-  uploadPreset: 'style-saga'}, (error, result) => { 
-    if (!error && result && result.event === "success") { 
-      console.log('Done! Here is the image info: ', result.info); 
-      document.querySelector('#post-picture').value = result.info.secure_url;
-    }
-  }
-)
-
-document.getElementById("upload_widget").addEventListener("click", function(){
-    myWidget.open();
-  }, false);
+  document
+    .getElementById("upload_widget")
+    .addEventListener("click", function(){
+        myWidget.open();
+      }, false);
