@@ -1,4 +1,4 @@
-{{!-- {{log this}} --}}
+{{log this}}
 
 <br>
 <br>
@@ -22,6 +22,8 @@
       </div>
     <div class="content is-size-5">
       {{description}}
+      <br>
+        Created by: {{user.first_name}} {{user.last_name}}
     </div>
   </div>
 </div>
@@ -78,7 +80,7 @@
       <img class="image is-64x64" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
     {{!-- </p> --}}
   </figure>
-  <form id="new-comment-form">
+  <form id="new-comment-form" data-id="{{id}}">
     <div class="field">
       <div class="control">
         <textarea class="textarea" id="comment-text" placeholder="Add a comment..."></textarea>
@@ -86,10 +88,10 @@
     </div>
     <div class="field">
       <div class="control">
-        <button class="button is-dark" data-id="{{id}}" type="submit">Submit</button>
+        <button class="button is-dark" type="submit">Submit</button>
       </div>
     </div>
   </form>
 </div>
 
-<script src="./js/post.js"></script>
+<script src="/js/post.js"></script>

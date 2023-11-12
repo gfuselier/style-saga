@@ -2,19 +2,20 @@ const newCommentFormHandler = async (event) => {
     event.preventDefault();
 
     const text = document.querySelector('#comment-text').value.trim();
-    const id = event.target.getAttribute('data-id');
+    const post_id = event.target.getAttribute('data-id');
 
     if (text) {
         const response = await fetch(`/api/comments`, {
           method: 'POST',
-          body: JSON.stringify({ text }),
+          body: JSON.stringify({ text, post_id }),
           headers: {
             'Content-Type': 'application/json',
           },
         });
     
         if (response.ok) {
-          document.location.replace(`/post/${id}`);
+            console.log(response)
+          document.location.reload(); 
         } else {
           alert('Failed to create comment.');
         }
