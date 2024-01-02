@@ -28,45 +28,24 @@
   </div>
 </div>
 
-<div class="comment-list">
+<div class="container comment-list">
   {{#if comments.length}}
   {{#each comments as |comment|}}
-  <div class="media m-5">
-    {{!-- <div class="buttons is-right">
-      <button class="delete" data-id="{{comment.id}}"></button>
-    </div> --}}
-    <figure class="media-left">
-      <br>
-      <p class="image is-64x64">
-        <br>
-        <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
-      </p>
+  <div class="box media mx-6 mt-4">
+    <figure class="media-left align-middle">
+        <img class="image is-64x64" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
     </figure>
     <div class="media-content">
       <div class="content">
-        {{!-- <br> --}}
         <p>
-          <br>
+          {{!-- <br>
           <strong>{{user.first_name}} {{user.last_name}}</strong> 
-          <br>
+          <br> --}}
           {{comment.text}}
           <br>
           <small><a>Like</a> · <a>Reply</a></small>
         </p>
       </div>
-      {{!-- <nav class="level is-mobile">
-        <div class="level-left">
-          <a class="level-item">
-            <span class="icon is-small"><i class="fas fa-reply"></i></span>
-          </a>
-          <a class="level-item">
-            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-          </a>
-          <a class="level-item">
-            <span class="icon is-small"><i class="fas fa-heart"></i></span>
-          </a>
-        </div>
-      </nav> --}}
     </div>
   </div>
   {{/each}}
@@ -74,7 +53,8 @@
 </div>
 
 
-<div class="media m-5">
+<div class="container">
+<div class="media m-6 px-4">
   <figure class="media-left">
     {{!-- <p class="image is-64x64"> --}}
       <img class="image is-64x64" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg">
@@ -92,6 +72,7 @@
       </div>
     </div>
   </form>
+</div>
 </div>
 
 <script src="/js/post.js"></script>
