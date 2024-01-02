@@ -1,27 +1,17 @@
 [
     {
-        "text": "omg they always have the best outfits",
+        "text": "I want them allllll!",
         "user_id": 1,
         "post_id": 1
     },
     {
-        "text": "I love them! Need every color.",
-        "user_id": 2,
+        "text": "2 or 3 for sure! The accessories make the look.",
+        "user_id": 1,
         "post_id": 2
     },
     {
-        "text": "2 has great style!",
-        "user_id": 3,
+        "text": "Dunks vs Jordan 1 Lows, what do y'all think?",
+        "user_id": 1,
         "post_id": 3
-    },
-    {
-        "text": "Not sure I could pull off the half-on jacket",
-        "user_id": 4,
-        "post_id": 4
-    },
-    {
-        "text": "Don't let me catch you wearing the panda dunks or some beat up AF1s!",
-        "user_id": 4,
-        "post_id": 5
     }
 ]
