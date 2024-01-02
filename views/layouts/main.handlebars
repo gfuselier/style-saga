@@ -15,8 +15,11 @@
 <body class="has-navbar-fixed-top">
   <nav class="navbar is-fixed-top has-background-black" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
+      {{#if logged_in}}
+      <a class="navbar-item is-size-1" href="/dashboard">Style Saga</a>
+      {{else}}
       <a class="navbar-item is-size-1" href="/">Style Saga</a>
-
+      {{/if}}
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
