@@ -22,6 +22,20 @@ Comment.init(
                 key: 'id',
             },
         },
+        user_firstname: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'first_name',
+            },
+        },
+        user_lastname: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'last_name',
+            },
+        },
         post_id:
         {
             type: DataTypes.INTEGER,
