@@ -13,12 +13,12 @@ Style Saga is a fashion blog for primarily street style fashion that allows user
 Don’t fall behind on the latest trends. Join Style Saga today. 
 
 
-## Installation
+## Technology
 
-N/A
+Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, Cloudinary, Bulma
+
 
 ## Usage
-
 
 
 [Link to Deployed Site](https://rocky-harbor-10081-a01abff67a03.herokuapp.com/)
